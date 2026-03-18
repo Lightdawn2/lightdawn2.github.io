@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Franco Cortés — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <div class="nav-logo">FC<span>.dev</span></div>
+  <ul class="nav-links">
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experiencia</a></li>
+    <li><a href="#certifications">Cursos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+  <div class="nav-status"><div class="dot"></div> Disponible</div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-left">
+    <div class="hero-tag">Soporte TI · Webmaster · Full Stack Dev</div>
+    <h1 class="hero-name">Franco<br><span class="line2">Cortés.</span></h1>
+    <div class="hero-title">Encargado de Soporte TI & Webmaster — <span>Instituto Crexer, Concepción</span></div>
+    <p class="hero-desc">Técnico Universitario en Informática (USM) con experiencia en soporte TI, administración de plataformas digitales (Moodle, WordPress) y desarrollo full stack de aplicaciones web y de escritorio. Resuelvo problemas reales con código limpio y criterio técnico.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">→ Contactar</a>
+      <a href="#projects" class="btn btn-ghost">Ver proyectos</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>
+        <span class="t-title">franco@portfolio ~ zsh</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> whoami</span></div>
+        <div class="t-out"><span class="hl">Franco Paolo Cortés Gallegos</span></div>
+        <br>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> cat stack.txt</span></div>
+        <div class="t-out">→ <span class="hl">Web:</span> PHP · MySQL · HTML · CSS · JS</div>
+        <div class="t-out">→ <span class="hl2">Desktop:</span> Python · Tkinter · SQLite</div>
+        <div class="t-out">→ <span class="hl3">Infra:</span> Linux · Apache · WordPress</div>
+        <div class="t-out">→ <span class="hl2">Cloud:</span> Power Platform · Office 365</div>
+        <br>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> cat status.txt</span></div>
+        <div class="t-out"><span class="hl">✓</span> Crexer — Soporte TI & Webmaster</div>
+        <div class="t-out"><span class="hl">✓</span> USM — Ing. Gestión Industrial</div>
+        <div class="t-out"><span class="hl">✓</span> Inglés B2 · Concepción, Chile</div>
+        <br>
+        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> <span class="t-cursor"></span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects-section" id="projects">
+  <div class="section-label">Desarrollo</div>
+  <h2 class="section-title reveal">Proyectos <span>Destacados</span></h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-type">Full Stack · Web App · En producción</div>
+      <div class="project-name">WebContable — Plataforma Educativa Contable</div>
+      <p class="project-desc">Aplicación web full stack para la enseñanza del ciclo contable completo. Sistema multi-rol (admin, profesor, alumno) con API REST, módulos contables reales y evaluación integrada.</p>
+      <ul class="project-highlights">
+        <li>API REST con 52 endpoints, arquitectura MVC, Router y middleware propios sin frameworks</li>
+        <li>Módulos contables: Plan de Cuentas, Libro Diario, Mayor, Balance de Comprobación</li>
+        <li>Estados Financieros automáticos: Balance General y Estado de Resultados</li>
+        <li>Sistema de cursos, actividades, entregas y calificación por profesor</li>
+        <li>Autenticación con tokens, sesiones y control de roles (admin/profesor/alumno)</li>
+        <li>43 archivos PHP: 12 Controllers · 10 Models · 6 Services</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">Apache</span>
+        <span class="tech-badge">REST API</span><span class="tech-badge">MVC</span><span class="tech-badge">Git</span>
+      </div>
+      <a href="http://contable.grupocrexer.cl" target="_blank" class="project-link">↗ contable.grupocrexer.cl</a>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-type">Full Stack · Web · CMS Institucional</div>
+      <div class="project-name">Plataforma Web Institucional — Crexer</div>
+      <p class="project-desc">Sitio web institucional con panel de administración (CMS) propio para gestión de cursos, contenidos y presencia digital del instituto. Actualmente en producción.</p>
+      <ul class="project-highlights">
+        <li>Backend PHP arquitectura MVC + base de datos MySQL normalizada</li>
+        <li>CRUD para cursos, contenidos y carrusel dinámico</li>
+        <li>Autenticación segura, protección CSRF y SQL Injection</li>
+        <li>Despliegue en servidor Apache</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">Apache</span>
+        <span class="tech-badge">Git</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-type">Desktop App · Python · Standalone</div>
+      <div class="project-name">Sistema Integral de Contabilidad</div>
+      <p class="project-desc">Aplicación de escritorio multiplataforma para gestión y aprendizaje del ciclo contable completo. Distribuible como ejecutable standalone sin dependencias.</p>
+      <ul class="project-highlights">
+        <li>Arquitectura MVC con separación de lógica, UI y datos</li>
+        <li>Base de datos SQLite con validaciones de integridad y transacciones</li>
+        <li>UI con Tkinter, exportación a Excel con OpenPyXL</li>
+        <li>Empaquetado con PyInstaller para distribución</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-badge">Python</span><span class="tech-badge">Tkinter</span><span class="tech-badge">SQLite</span>
+        <span class="tech-badge">OpenPyXL</span><span class="tech-badge">PyInstaller</span><span class="tech-badge">Git</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-type">Power Platform · Práctica Profesional</div>
+      <div class="project-name">App de Control de Inventario TI</div>
+      <p class="project-desc">Aplicación interna para Layher del Pacífico para control y trazabilidad de activos tecnológicos empresariales.</p>
+      <ul class="project-highlights">
+        <li>Desarrollo en PowerApps con base de datos Dataverse</li>
+        <li>Mantención de aplicación web PHP vía FTP</li>
+        <li>Charlas internas de ciberseguridad básica al equipo</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-badge">PowerApps</span><span class="tech-badge">Dataverse</span>
+        <span class="tech-badge">PHP</span><span class="tech-badge">Power Platform</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-label">Tecnologías</div>
+  <h2 class="section-title reveal">Stack &amp; <span>Herramientas</span></h2>
+  <div class="skills-grid reveal">
+    <div class="skill-card"><div class="skill-category">Frontend</div><div class="skill-tags"><span class="tag">HTML</span><span class="tag">CSS Intermedio</span><span class="tag">JavaScript Básico</span></div></div>
+    <div class="skill-card"><div class="skill-category">Backend</div><div class="skill-tags"><span class="tag">PHP</span><span class="tag">Python Intermedio</span><span class="tag">MySQL</span><span class="tag">SQLite</span></div></div>
+    <div class="skill-card"><div class="skill-category">CMS & Plataformas</div><div class="skill-tags"><span class="tag">WordPress</span><span class="tag">Moodle</span><span class="tag">Apache</span></div></div>
+    <div class="skill-card"><div class="skill-category">Herramientas Dev</div><div class="skill-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Android Studio</span><span class="tag">NetBeans</span></div></div>
+    <div class="skill-card"><div class="skill-category">Microsoft / Cloud</div><div class="skill-tags"><span class="tag">Power Apps</span><span class="tag">Power Automate</span><span class="tag">Power BI</span><span class="tag">Dataverse</span><span class="tag">Office 365</span></div></div>
+    <div class="skill-card"><div class="skill-category">Sistemas & Soporte</div><div class="skill-tags"><span class="tag">Linux Red Hat 8.x</span><span class="tag">Windows Server</span><span class="tag">HW/SW Soporte</span><span class="tag">Inventario TI</span></div></div>
+    <div class="skill-card"><div class="skill-category">Idiomas</div><div class="skill-tags"><span class="tag">Español — Nativo</span><span class="tag">Inglés — B2</span></div></div>
+  </div>
+</section>
+
+<section id="experience" class="experience-section">
+  <div class="section-label">Trayectoria</div>
+  <h2 class="section-title reveal">Experiencia <span>Laboral</span></h2>
+  <div class="exp-grid">
+    <div class="exp-item reveal">
+      <div class="exp-date"><span class="exp-current">Jun 2025 — Presente</span></div>
+      <div class="exp-content">
+        <div class="exp-role">Encargado de Soporte TI & Webmaster</div>
+        <div class="exp-company">Instituto de Capacitación Avanzada Crexer — Concepción</div>
+        <ul class="exp-bullets">
+          <li>Soporte técnico a usuarios internos (hardware, software, sistemas Windows)</li>
+          <li>Administración de Moodle y sitios web corporativos</li>
+          <li>Mantención y actualización de sitios WordPress</li>
+          <li>Gestión de cuentas, licencias y herramientas Office 365</li>
+          <li>Mantención preventiva de equipos y gestión de inventario TI</li>
+          <li>Coordinación con proveedores y áreas internas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-date">Dic 2024 — Feb 2025</div>
+      <div class="exp-content">
+        <div class="exp-role">Práctica Profesional — Depto. de Sistemas</div>
+        <div class="exp-company">Layher del Pacífico S.A. — Santiago</div>
+        <ul class="exp-bullets">
+          <li>Soporte técnico a usuarios, mantención preventiva y correctiva</li>
+          <li>Desarrollo de app PowerApps para control de inventario tecnológico</li>
+          <li>Creación y mantención de bases de datos en Dataverse</li>
+          <li>Mantención de app web PHP vía FTP</li>
+          <li>Gestión con call centers para impresoras industriales HP y Ricoh</li>
+          <li>Charlas internas de ciberseguridad básica</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-date">2025</div>
+      <div class="exp-content">
+        <div class="exp-role">Marketing Digital</div>
+        <div class="exp-company">Empresas Particulares — Freelance</div>
+        <ul class="exp-bullets"><li>Gestión de presencia digital y creación de contenido para clientes independientes</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="education-block">
+    <div class="section-label">Formación</div>
+    <h2 class="section-title reveal">Educación</h2>
+    <div class="exp-grid">
+      <div class="exp-item reveal">
+        <div class="exp-date">2025 — Act.</div>
+        <div class="exp-content">
+          <div class="exp-role">Ingeniería de Ejecución en Gestión Industrial</div>
+          <div class="exp-company">Universidad Técnico Federico Santa María</div>
+          <ul class="exp-bullets"><li>Cursando actualmente</li></ul>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-date">2023 — 2025</div>
+        <div class="exp-content">
+          <div class="exp-role">Técnico Universitario en Informática</div>
+          <div class="exp-company">Universidad Técnico Federico Santa María</div>
+          <ul class="exp-bullets"><li>Titulado</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certs-section" id="certifications">
+  <div class="section-label">Formación Continua</div>
+  <h2 class="section-title reveal">Cursos &amp; <span>Certificaciones</span></h2>
+  <div class="certs-grid">
+    <div class="cert-card reveal"><div class="cert-year">2025</div><div class="cert-name">Microsoft Power Platform</div><div class="cert-platform">Microsoft — Webinar</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2024</div><div class="cert-name">Desarrollo Web</div><div class="cert-platform">Certificado Oficial</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2024</div><div class="cert-name">Adobe Premiere Pro</div><div class="cert-platform">Udemy</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2023</div><div class="cert-name">Hacking Ético</div><div class="cert-platform">Certificado Oficial</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2023</div><div class="cert-name">JavaScript</div><div class="cert-platform">Udemy</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2023</div><div class="cert-name">Java</div><div class="cert-platform">Udemy</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2023</div><div class="cert-name">PHP</div><div class="cert-platform">Udemy</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2023</div><div class="cert-name">CSS Avanzado</div><div class="cert-platform">Udemy</div></div>
+    <div class="cert-card reveal"><div class="cert-year">2023</div><div class="cert-name">HTML5</div><div class="cert-platform">Udemy</div></div>
+    <div class="cert-card reveal"><div class="cert-year">—</div><div class="cert-name">Python</div><div class="cert-platform">Udemy</div></div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="section-label" style="justify-content:center">Hablemos</div>
+  <h2 class="section-title reveal">¿Tienes un <span>proyecto</span>?</h2>
+  <p class="contact-desc reveal">Abierto a oportunidades freelance, colaboraciones y proyectos interesantes.</p>
+  <a href="mailto:fpcgallegos@gmail.com" class="contact-email reveal">fpcgallegos@gmail.com</a>
+  <div class="social-links reveal">
+    <a href="https://github.com" target="_blank" class="social-link">⌥ GitHub</a>
+    <a href="https://linkedin.com" target="_blank" class="social-link">⌘ LinkedIn</a>
+    <a href="https://profile.indeed.com" target="_blank" class="social-link">◈ Indeed</a>
+  </div>
+</section>
+
+<footer>
+  <span>Franco Paolo Cortés Gallegos</span>
+  <div>Concepción, Chile · <span>2026</span></div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
