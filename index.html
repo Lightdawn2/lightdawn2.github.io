@@ -32,7 +32,7 @@
     <div class="hero-tag">Soporte TI · Webmaster · Full Stack Dev</div>
     <h1 class="hero-name">Franco<br><span class="line2">Cortés.</span></h1>
     <div class="hero-title">Encargado de Soporte TI & Webmaster — <span>Instituto Crexer, Concepción</span></div>
-    <p class="hero-desc">Técnico Universitario en Informática (USM) con experiencia en soporte TI, administración de plataformas digitales (Moodle, WordPress) y desarrollo full stack de aplicaciones web y de escritorio. Resuelvo problemas reales con código limpio y criterio técnico.</p>
+    <p class="hero-desc">Técnico Universitario en Informática (USM) con experiencia en soporte TI, administración de plataformas digitales y desarrollo full stack de aplicaciones web y de escritorio en producción. Resuelvo problemas reales con código limpio y criterio técnico.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">→ Contactar</a>
       <a href="#projects" class="btn btn-ghost">Ver proyectos</a>
@@ -73,14 +73,14 @@
     <div class="project-card reveal">
       <div class="project-type">Full Stack · Web App · En producción</div>
       <div class="project-name">WebContable — Plataforma Educativa Contable</div>
-      <p class="project-desc">Aplicación web full stack para la enseñanza del ciclo contable completo. Sistema multi-rol (admin, profesor, alumno) con API REST, módulos contables reales y evaluación integrada.</p>
+      <p class="project-desc">Aplicación web full stack para la enseñanza del ciclo contable completo. Sistema multi-rol con API REST, módulos contables reales y sistema de evaluación — construido desde cero sin frameworks.</p>
       <ul class="project-highlights">
-        <li>API REST con 52 endpoints, arquitectura MVC, Router y middleware propios sin frameworks</li>
-        <li>Módulos contables: Plan de Cuentas, Libro Diario, Mayor, Balance de Comprobación</li>
+        <li>API REST propia con 52 endpoints — Router, middleware de autenticación y roles construidos desde cero</li>
+        <li>Arquitectura MVC: 12 Controllers · 10 Models · 6 Services (43 archivos PHP)</li>
+        <li>Módulos: Plan de Cuentas, Libro Diario, Mayor, Balance de Comprobación</li>
         <li>Estados Financieros automáticos: Balance General y Estado de Resultados</li>
         <li>Sistema de cursos, actividades, entregas y calificación por profesor</li>
-        <li>Autenticación con tokens, sesiones y control de roles (admin/profesor/alumno)</li>
-        <li>43 archivos PHP: 12 Controllers · 10 Models · 6 Services</li>
+        <li>Autenticación con tokens, sesiones y control de roles (admin / profesor / alumno)</li>
       </ul>
       <div class="project-tech">
         <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">JavaScript</span>
@@ -91,35 +91,40 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-type">Full Stack · Web · CMS Institucional</div>
-      <div class="project-name">Plataforma Web Institucional — Crexer</div>
-      <p class="project-desc">Sitio web institucional con panel de administración (CMS) propio para gestión de cursos, contenidos y presencia digital del instituto. Actualmente en producción.</p>
+      <div class="project-type">Full Stack · CMS Institucional · En producción</div>
+      <div class="project-name">Sitio Web Institucional — grupocrexer.cl</div>
+      <p class="project-desc">Sitio web corporativo completo con panel de administración (CMS) propio para Instituto Crexer. Gestión dinámica de cursos, noticias, equipo, carrusel y clientes.</p>
       <ul class="project-highlights">
-        <li>Backend PHP arquitectura MVC + base de datos MySQL normalizada</li>
-        <li>CRUD para cursos, contenidos y carrusel dinámico</li>
-        <li>Autenticación segura, protección CSRF y SQL Injection</li>
-        <li>Despliegue en servidor Apache</li>
+        <li>137 archivos (23 PHP · 22 JS · 12 CSS) con arquitectura modular propia</li>
+        <li>API REST con 8 endpoints para todas las entidades del sitio</li>
+        <li>Panel admin completo: CRUD de cursos, noticias, equipo, carrusel y logos clientes</li>
+        <li>Base de datos MySQL con 6 tablas y catálogo de 30+ cursos con precios y modalidades SENCE</li>
+        <li>Generación automática de thumbnails para noticias y protección CSRF</li>
+        <li>Formulario de contacto con captura de IP, user agent y tipo de cliente (empresa/particular)</li>
       </ul>
       <div class="project-tech">
         <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">JavaScript</span>
         <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">Apache</span>
-        <span class="tech-badge">Git</span>
+        <span class="tech-badge">REST API</span><span class="tech-badge">Git</span>
       </div>
+      <a href="http://grupocrexer.cl" target="_blank" class="project-link">↗ grupocrexer.cl</a>
     </div>
 
     <div class="project-card reveal">
       <div class="project-type">Desktop App · Python · Standalone</div>
       <div class="project-name">Sistema Integral de Contabilidad</div>
-      <p class="project-desc">Aplicación de escritorio multiplataforma para gestión y aprendizaje del ciclo contable completo. Distribuible como ejecutable standalone sin dependencias.</p>
+      <p class="project-desc">Aplicación de escritorio multiplataforma para gestión del ciclo contable completo. Arquitectura en capas con 26 archivos Python, distribuible como ejecutable standalone.</p>
       <ul class="project-highlights">
-        <li>Arquitectura MVC con separación de lógica, UI y datos</li>
-        <li>Base de datos SQLite con validaciones de integridad y transacciones</li>
-        <li>UI con Tkinter, exportación a Excel con OpenPyXL</li>
-        <li>Empaquetado con PyInstaller para distribución</li>
+        <li>Arquitectura en capas MVC: database/ · models/ · views/ · utils/ (26 archivos Python)</li>
+        <li>Partida doble con validación automática Debe = Haber en cada comprobante</li>
+        <li>Módulos: Plan Cuentas, Comprobantes, Libros Compras/Ventas, Balance, EEFF</li>
+        <li>Exportación a Excel con 7 hojas: Plan de Cuentas, Libro Diario, Balance, EEFF</li>
+        <li>UI con Tkinter + tkcalendar, procesamiento en segundo plano con threading</li>
+        <li>Empaquetado con PyInstaller para distribución sin instalar Python</li>
       </ul>
       <div class="project-tech">
         <span class="tech-badge">Python</span><span class="tech-badge">Tkinter</span><span class="tech-badge">SQLite</span>
-        <span class="tech-badge">OpenPyXL</span><span class="tech-badge">PyInstaller</span><span class="tech-badge">Git</span>
+        <span class="tech-badge">OpenPyXL</span><span class="tech-badge">tkcalendar</span><span class="tech-badge">PyInstaller</span><span class="tech-badge">Git</span>
       </div>
     </div>
 
@@ -145,12 +150,12 @@
   <div class="section-label">Tecnologías</div>
   <h2 class="section-title reveal">Stack &amp; <span>Herramientas</span></h2>
   <div class="skills-grid reveal">
-    <div class="skill-card"><div class="skill-category">Frontend</div><div class="skill-tags"><span class="tag">HTML</span><span class="tag">CSS Intermedio</span><span class="tag">JavaScript Básico</span></div></div>
+    <div class="skill-card"><div class="skill-category">Frontend</div><div class="skill-tags"><span class="tag">HTML</span><span class="tag">CSS Intermedio</span><span class="tag">JavaScript</span></div></div>
     <div class="skill-card"><div class="skill-category">Backend</div><div class="skill-tags"><span class="tag">PHP</span><span class="tag">Python Intermedio</span><span class="tag">MySQL</span><span class="tag">SQLite</span></div></div>
     <div class="skill-card"><div class="skill-category">CMS & Plataformas</div><div class="skill-tags"><span class="tag">WordPress</span><span class="tag">Moodle</span><span class="tag">Apache</span></div></div>
     <div class="skill-card"><div class="skill-category">Herramientas Dev</div><div class="skill-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Android Studio</span><span class="tag">NetBeans</span></div></div>
     <div class="skill-card"><div class="skill-category">Microsoft / Cloud</div><div class="skill-tags"><span class="tag">Power Apps</span><span class="tag">Power Automate</span><span class="tag">Power BI</span><span class="tag">Dataverse</span><span class="tag">Office 365</span></div></div>
-    <div class="skill-card"><div class="skill-category">Sistemas & Soporte</div><div class="skill-tags"><span class="tag">Linux Red Hat 8.x</span><span class="tag">Windows Server</span><span class="tag">HW/SW Soporte</span><span class="tag">Inventario TI</span></div></div>
+    <div class="skill-card"><div class="skill-category">Sistemas & Soporte</div><div class="skill-tags"><span class="tag">Linux Red Hat 8.x</span><span class="tag">Windows Server</span><span class="tag">Soporte HW/SW</span><span class="tag">Inventario TI</span></div></div>
     <div class="skill-card"><div class="skill-category">Idiomas</div><div class="skill-tags"><span class="tag">Español — Nativo</span><span class="tag">Inglés — B2</span></div></div>
   </div>
 </section>
@@ -166,8 +171,8 @@
         <div class="exp-company">Instituto de Capacitación Avanzada Crexer — Concepción</div>
         <ul class="exp-bullets">
           <li>Soporte técnico a usuarios internos (hardware, software, sistemas Windows)</li>
-          <li>Administración de Moodle y sitios web corporativos</li>
-          <li>Mantención y actualización de sitios WordPress</li>
+          <li>Administración de Moodle y sitios web corporativos WordPress</li>
+          <li>Desarrollo y mantención de sistemas web institucionales en producción</li>
           <li>Gestión de cuentas, licencias y herramientas Office 365</li>
           <li>Mantención preventiva de equipos y gestión de inventario TI</li>
           <li>Coordinación con proveedores y áreas internas</li>
@@ -180,10 +185,9 @@
         <div class="exp-role">Práctica Profesional — Depto. de Sistemas</div>
         <div class="exp-company">Layher del Pacífico S.A. — Santiago</div>
         <ul class="exp-bullets">
+          <li>Desarrollo de app PowerApps para control de inventario tecnológico con Dataverse</li>
           <li>Soporte técnico a usuarios, mantención preventiva y correctiva</li>
-          <li>Desarrollo de app PowerApps para control de inventario tecnológico</li>
-          <li>Creación y mantención de bases de datos en Dataverse</li>
-          <li>Mantención de app web PHP vía FTP</li>
+          <li>Mantención de app web PHP vía FTP y actualización de base de datos</li>
           <li>Gestión con call centers para impresoras industriales HP y Ricoh</li>
           <li>Charlas internas de ciberseguridad básica</li>
         </ul>
@@ -246,7 +250,7 @@
   <p class="contact-desc reveal">Abierto a oportunidades freelance, colaboraciones y proyectos interesantes.</p>
   <a href="mailto:fpcgallegos@gmail.com" class="contact-email reveal">fpcgallegos@gmail.com</a>
   <div class="social-links reveal">
-    <a href="https://github.com" target="_blank" class="social-link">⌥ GitHub</a>
+    <a href="https://github.com/Lightdawn2" target="_blank" class="social-link">⌥ GitHub</a>
     <a href="https://linkedin.com" target="_blank" class="social-link">⌘ LinkedIn</a>
     <a href="https://profile.indeed.com" target="_blank" class="social-link">◈ Indeed</a>
   </div>
