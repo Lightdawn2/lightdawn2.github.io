@@ -1,6 +1,6 @@
 # Fuentes y decisiones de contenido
 
-Revisión: 16 de septiembre de 2026. Este documento acompaña el contenido público sin copiar datos operacionales, credenciales, endpoints internos ni registros de clientes.
+Revisión: 23 de septiembre de 2026. Este documento acompaña el contenido público sin copiar datos operacionales, credenciales, endpoints internos ni registros de clientes.
 
 | Ficha | Evidencia revisada | Criterio editorial |
 | --- | --- | --- |
@@ -11,10 +11,13 @@ Revisión: 16 de septiembre de 2026. Este documento acompaña el contenido públ
 | CRM y Proyecto AB | README locales y descripción de `proyecto-ab` en GitHub | Se conserva el antecedente del CRM. Proyecto AB archivado el 8 de septiembre; no se equipara archivo de AB con archivo del repositorio CRM. |
 | Proyectos anteriores, cursos y formación | `index.html` anterior a la remodelación; importado a `content/legacy.json` | Descripciones conservadas. No se revalidó la operación actual de los sitios Crexer ni se obtuvieron archivos originales de los certificados. |
 
+## Cronología laboral confirmada
+
+- Instituto Crexer: abril de 2025 a abril de 2026.
+- Belray Chile: Técnico en Confiabilidad — Desarrollador desde mayo de 2026 hasta la actualidad.
+
 ## Confirmaciones pendientes
 
-- Años de inicio y término de Crexer: el usuario corrigió los meses a mayo–abril. El dato anterior decía junio de 2025–presente y quedó reemplazado. Los años no se infirieron.
-- Mes y año de ingreso a Belray: se muestra «Actualidad» y el cargo indicado por el usuario.
 - URLs personales de LinkedIn e Indeed: los enlaces anteriores apuntaban a las portadas genéricas y fueron retirados. Reincorporar únicamente URLs de perfiles confirmados.
 - Evidencias descargables de cursos: no había archivos en el portafolio original; se conservan sus nombres, emisores y años sin crear enlaces ficticios.
 

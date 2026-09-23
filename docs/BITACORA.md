@@ -1,12 +1,18 @@
 # Bitácora del portafolio
 
+## 2026-09-23 — Cronología laboral confirmada
+
+- Confirmado el período en Instituto Crexer: abril de 2025 a abril de 2026.
+- Confirmado el ingreso a Belray Chile: mayo de 2026, con continuidad hasta la actualidad.
+- Actualizadas la experiencia pública, la ficha de producto y las fuentes editoriales.
+
 ## 2026-09-16 — Reconstrucción de trayectoria y rediseño
 
 - Recuperado el sitio original desde `Lightdawn2/lightdawn2.github.io`.
 - Conservados los cuatro proyectos previos, diez cursos, educación, idioma, correo y perfil de GitHub.
 - Agregados Ventec APP, CKT / CONNEKT, ecosistema web Belray, Agua Dúctil y CRM / Proyecto AB.
 - Actualizado el cargo actual a Técnico en Confiabilidad — Desarrollador en Belray Chile.
-- Corregido el período Crexer a mayo–abril, sin inventar años pendientes de confirmación.
+- Registrado provisionalmente el período Crexer por meses, dejando los años pendientes de confirmación.
 - Registrada la evolución Flutter → Expo de Ventec, la continuidad comercial desde Proyecto AB y la consolidación de los sitios web.
 - Reemplazada la presentación anterior por un catálogo de proyectos con filtros y detalle desplegable, bitácora, formación y contacto.
 - Contenido estático generado a partir de JSON para facilitar próximas actualizaciones. El HTML completo funciona sin JavaScript.

@@ -14,7 +14,7 @@ Lectores que evalúan la trayectoria profesional y los proyectos de Franco. Recl
 Conservar los cuatro proyectos anteriores, formación, cursos y contacto. Integrar Ventec APP, CKT / CONNEKT, los sitios de Belray y Agua Dúctil. Mantener GitHub Pages y la base estática HTML/CSS/JavaScript. Describir capacidades verificadas sin publicar datos comerciales, credenciales ni código privado. Distinguir prototipos, desarrollos en curso y sitios implementados de despliegues productivos no comprobados.
 
 ## Evidence on Hand
-Portafolio original en el historial Git; README, código e historial de commits de los repositorios locales de Ventec, CONNEKT, Belray CRM, Proyecto AB, belray-webs y Agua Dúctil. El nuevo cargo fue confirmado por el usuario: Técnico en Confiabilidad - Desarrollador, Belray Chile. Corrección confirmada de meses en Crexer: mayo a abril; años y fecha de ingreso a Belray consultados y pendientes.
+Portafolio original en el historial Git; README, código e historial de commits de los repositorios locales de Ventec, CONNEKT, Belray CRM, Proyecto AB, belray-webs y Agua Dúctil. El cargo y la cronología laboral fueron confirmados por el usuario: Crexer desde abril de 2025 hasta abril de 2026; Técnico en Confiabilidad - Desarrollador en Belray Chile desde mayo de 2026 hasta la actualidad.
 
 ## Brand Commitments
 Español. Nombre profesional Franco Cortés. Diseño delegado explícitamente al agente.
