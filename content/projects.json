@@ -1,0 +1,186 @@
+{
+  "updated": "2026-09-16",
+  "projects": [
+    {
+      "id": "ventec",
+      "name": "Ventec APP",
+      "category": "belray",
+      "type": "Aplicación comercial · Belray Chile",
+      "status": "Marcha blanca",
+      "year": "2026",
+      "visual": "sales",
+      "description": "Plataforma comercial para conectar ventas, cartera de clientes y trabajo en terreno. Evolucionó desde un MVP en Flutter a una aplicación React Native / Expo, con API propia, base PostgreSQL y panel de administración web.",
+      "highlights": [
+        "Dashboard de ventas con filtros, rankings y exportación; ingesta CSV con validación, deduplicación y registro de cargas.",
+        "Integración de ventas del ERP mediante BigQuery y sincronización hacia PostgreSQL, con controles de integridad y antigüedad de los datos.",
+        "Agenda comercial, contactos, visitas y seguimientos, con acceso por vendedor y perfiles administrativos.",
+        "Simulador de reducción de costos con fórmulas versionadas y administración de usuarios y parámetros.",
+        "Verificación de ubicación de visitas, revisión de actividad y reportes de problemas con seguimiento en Notion.",
+        "Integración de flota Strix, recorridos y cruce con gestiones comerciales implementados en desarrollo; despliegue pendiente según el registro del 9 de septiembre.",
+        "Preparación de APK Android, despliegue de API y panel, respaldo de datos y documentación para marcha blanca."
+      ],
+      "tech": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Fastify",
+        "Node.js",
+        "PostgreSQL",
+        "BigQuery",
+        "React",
+        "Docker"
+      ],
+      "history": "MVP Flutter → migración a Expo → integración ERP y agenda → marcha blanca → gestión de flota en desarrollo.",
+      "source": "ventec-mobile-app: README.md, docs/ESTADO.md, docs/bigquery-erp-integration.md e historial Git."
+    },
+    {
+      "id": "connekt",
+      "name": "CKT APP / CONNEKT",
+      "category": "belray",
+      "type": "Monitoreo industrial · Belray Chile",
+      "status": "En desarrollo",
+      "year": "2026",
+      "visual": "telemetry",
+      "description": "Aplicación móvil de monitoreo de condición de aceite en equipos industriales. Organiza plantas y equipos, consulta telemetría e históricos y presenta variables de condición en una interfaz pensada para confiabilidad.",
+      "highlights": [
+        "Navegación por plantas y equipos, dashboard por equipo e histórico tabulado con selección de variable.",
+        "Visualización de AW, partículas de 4 / 6 / 14 µm, clasificación NAS y condición OD.",
+        "Integración de históricos mediante un proxy backend y lecturas recientes desde Ubidots para complementar los datos disponibles.",
+        "Normalización de respuestas, caché y reintentos con TanStack Query; estados de carga, error, ausencia de datos y lecturas atrasadas.",
+        "Filtros temporales, paginación de históricos y tratamiento de la hora local de Chile.",
+        "Perfiles y permisos de demostración por planta y equipo. Autenticación productiva y validación técnica de umbrales aún pendientes."
+      ],
+      "tech": [
+        "React Native",
+        "Expo Router",
+        "TypeScript",
+        "TanStack Query",
+        "Zustand",
+        "Axios",
+        "Ubidots",
+        "API REST"
+      ],
+      "history": "Base móvil → integración de telemetría → ajustes de históricos y zona horaria → complemento de lecturas recientes.",
+      "source": "connekt-mobile: README.md, src/services/telemetry e historial Git."
+    },
+    {
+      "id": "belray-web",
+      "name": "Ecosistema web Belray",
+      "category": "belray",
+      "type": "Sitios corporativos · Belray Chile",
+      "status": "Implementado · en revisión",
+      "year": "2026",
+      "visual": "web",
+      "description": "Reconstrucción de los sitios Bel-Ray y Ventec con arquitectura estática, contenidos trazables y componentes compartidos. Los desarrollos se reunieron en un monorepo para mantener cada marca y su versionado de forma independiente.",
+      "highlights": [
+        "Bel-Ray: reconstrucción de páginas corporativas, servicios, sucursales, contacto y catálogo industrial.",
+        "Importación de 42 productos desde WooCommerce, conservando categorías, atributos, fotografías y enlaces a documentación técnica.",
+        "Ventec: reorganización de 46 páginas de origen en 26 rutas, con fichas de marcas, casos, servicios y productos de ingeniería.",
+        "Calculadora interactiva con islas Preact y salida HTML estática para reducir dependencias de ejecución en el servidor.",
+        "Monorepo pnpm con capa compartida y etiquetas de versión por sitio.",
+        "Connekt y RPurple incluidos en el alcance del repositorio, con sus nuevas implementaciones aún pendientes. El rediseño no se presenta como publicado en los dominios actuales."
+      ],
+      "tech": [
+        "Astro",
+        "TypeScript",
+        "Preact",
+        "React",
+        "pnpm",
+        "WooCommerce CSV",
+        "nginx"
+      ],
+      "history": "Levantamiento de sitios existentes → reconstrucción Bel-Ray y Ventec → consolidación en monorepo el 8 de septiembre de 2026.",
+      "source": "belray-webs: README.md y README de sites/belray.cl y sites/ventec.cl."
+    },
+    {
+      "id": "aguaductil",
+      "name": "Agua Dúctil",
+      "category": "independiente",
+      "type": "Sitio industrial · Proyecto independiente",
+      "status": "En desarrollo",
+      "year": "2026",
+      "visual": "water",
+      "description": "Desarrollo particular de un sitio multipágina para una empresa de soluciones para redes de agua. Reúne presentación corporativa, familias de productos, sucursales y consulta comercial, con una base de contenido preparada para seguir creciendo.",
+      "highlights": [
+        "Sitio estático en Astro y TypeScript, fuentes locales e imágenes WebP, con adaptación a escritorio y móvil.",
+        "Catálogo por familias y fichas con esquema validado, conservando la procedencia y el estado editorial del contenido recuperado.",
+        "Lista técnica de cotización, panel de descargas y navegación con submenús accesibles.",
+        "Identidad visual oficial y modo oscuro persistente.",
+        "Formulario conectado a un backend independiente, con manejo explícito de errores y alternativa por correo cuando no hay entrega configurada.",
+        "Validaciones de código, pruebas de navegador y publicación de la maqueta mediante Cloudflare Pages. Lanzamiento comercial y contenido final pendientes de validación."
+      ],
+      "tech": [
+        "Astro",
+        "TypeScript",
+        "CSS",
+        "Node.js",
+        "Playwright",
+        "Cloudflare Pages",
+        "GitHub Actions"
+      ],
+      "history": "Levantamiento y trazabilidad → maqueta multipágina → cotización técnica → identidad oficial, modo oscuro y descargas.",
+      "source": "aguaductil: README.md, package.json, src/data y commits del 15–16 de septiembre de 2026."
+    },
+    {
+      "id": "crm",
+      "name": "CRM Bel-Ray / Ventec",
+      "category": "belray",
+      "type": "Gestión comercial · Desarrollo previo",
+      "status": "Antecedente de Ventec APP",
+      "year": "2026",
+      "visual": "archive",
+      "description": "Desarrollo de un CRM modular para seguimiento comercial, visitas, postventa y prevención de riesgos. Su trabajo forma parte de la evolución hacia la plataforma comercial actual y se conserva como antecedente técnico.",
+      "highlights": [
+        "Monolito Django con API Django REST Framework y PostgreSQL / PostGIS.",
+        "Gestión de zonas, vendedores, clientes, contactos, asignaciones, visitas, estados y comentarios.",
+        "Acceso por rol y zona, dashboard de productividad y calendario de visitas.",
+        "Reportes preventivos con hallazgos, evidencias y revisión de jefaturas.",
+        "Proyecto AB exploró la convergencia con una app Expo, importaciones, ventas e informes PDF. Fue archivado el 8 de septiembre de 2026; la línea activa continuó en Ventec APP."
+      ],
+      "tech": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "PostgreSQL",
+        "PostGIS",
+        "HTMX",
+        "Bootstrap",
+        "Docker"
+      ],
+      "history": "CRM modular → prototipo de convergencia Proyecto AB → continuidad de la línea comercial en Ventec APP.",
+      "source": "belray-crm: README.md; proyecto-ab: README.md y descripción del repositorio en GitHub."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "Junio 2026",
+      "title": "Ventec evoluciona a Expo",
+      "text": "La base Flutter da paso a React Native / Expo, una API Fastify y PostgreSQL.",
+      "project": "ventec"
+    },
+    {
+      "date": "Julio–agosto 2026",
+      "title": "Del desarrollo a la operación",
+      "text": "Integración ERP, agenda y administración en Ventec; mejoras de históricos y filtros temporales en CONNEKT.",
+      "project": "ventec"
+    },
+    {
+      "date": "Septiembre 2026",
+      "title": "Seguimiento y confiabilidad de datos",
+      "text": "Marcha blanca de Ventec, reportes de problemas, controles de sincronización y respaldos. Integración de flota desarrollada, pendiente de despliegue.",
+      "project": "ventec"
+    },
+    {
+      "date": "8 septiembre 2026",
+      "title": "El ecosistema se ordena",
+      "text": "Bel-Ray y Ventec se reúnen en un monorepo. Proyecto AB se archiva y el desarrollo comercial continúa en Ventec APP.",
+      "project": "belray-web"
+    },
+    {
+      "date": "15–16 septiembre 2026",
+      "title": "Agua Dúctil suma nuevas herramientas",
+      "text": "Lista técnica de cotización, identidad visual oficial, modo oscuro persistente y panel de descargas.",
+      "project": "aguaductil"
+    }
+  ]
+}

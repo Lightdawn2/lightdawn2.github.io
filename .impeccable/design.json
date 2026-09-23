@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-23T00:00:00-03:00",
+  "title": "Design System: Portafolio de Franco Cortés",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Verde Bosque Operativo",
+        "canonical": "#173e35",
+        "tonalRamp": ["oklch(15% 0.035 165)", "oklch(25% 0.045 165)", "#173e35", "oklch(45% 0.055 165)", "oklch(58% 0.045 165)", "oklch(70% 0.035 165)", "oklch(84% 0.025 165)", "oklch(95% 0.012 165)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta Verde",
+        "canonical": "#173b33",
+        "tonalRamp": ["oklch(15% 0.03 165)", "oklch(24% 0.04 165)", "#173b33", "oklch(44% 0.045 165)", "oklch(57% 0.038 165)", "oklch(70% 0.03 165)", "oklch(84% 0.02 165)", "oklch(95% 0.01 165)"]
+      },
+      "mint-field": {
+        "role": "secondary",
+        "displayName": "Campo Menta",
+        "canonical": "#e0eee2",
+        "tonalRamp": ["oklch(15% 0.025 145)", "oklch(28% 0.03 145)", "oklch(42% 0.035 145)", "oklch(56% 0.035 145)", "oklch(69% 0.03 145)", "oklch(80% 0.025 145)", "#e0eee2", "oklch(96% 0.012 145)"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel Frío",
+        "canonical": "#f7f8f4",
+        "tonalRamp": ["oklch(15% 0.008 110)", "oklch(28% 0.008 110)", "oklch(42% 0.007 110)", "oklch(56% 0.006 110)", "oklch(70% 0.006 110)", "oklch(82% 0.005 110)", "oklch(91% 0.004 110)", "#f7f8f4"]
+      },
+      "signal-lime": {
+        "role": "primary",
+        "displayName": "Lima de Señal",
+        "canonical": "#d5f18c",
+        "tonalRamp": ["oklch(15% 0.07 120)", "oklch(28% 0.10 120)", "oklch(42% 0.13 120)", "oklch(56% 0.15 120)", "oklch(69% 0.15 120)", "oklch(80% 0.13 120)", "#d5f18c", "oklch(95% 0.055 120)"]
+      },
+      "muted-copy": {
+        "role": "neutral",
+        "displayName": "Copia Atenuada",
+        "canonical": "#53665e",
+        "tonalRamp": ["oklch(15% 0.015 165)", "oklch(27% 0.02 165)", "#53665e", "oklch(49% 0.022 165)", "oklch(61% 0.019 165)", "oklch(73% 0.016 165)", "oklch(85% 0.012 165)", "oklch(95% 0.006 165)"]
+      },
+      "structural-line": {
+        "role": "neutral",
+        "displayName": "Línea Estructural",
+        "canonical": "#a9beb0",
+        "tonalRamp": ["oklch(15% 0.018 155)", "oklch(28% 0.024 155)", "oklch(41% 0.028 155)", "oklch(54% 0.03 155)", "oklch(66% 0.028 155)", "#a9beb0", "oklch(85% 0.018 155)", "oklch(95% 0.009 155)"]
+      },
+      "focus-blue": {
+        "role": "tertiary",
+        "displayName": "Azul de Foco",
+        "canonical": "#327be0",
+        "tonalRamp": ["oklch(15% 0.08 255)", "oklch(27% 0.12 255)", "oklch(40% 0.16 255)", "#327be0", "oklch(63% 0.16 255)", "oklch(74% 0.13 255)", "oklch(86% 0.08 255)", "oklch(95% 0.035 255)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Nombre de portada", "purpose": "Identidad principal y primer impacto." },
+      "headline": { "displayName": "Encabezado de sección", "purpose": "Abre los capítulos mayores del catálogo." },
+      "title": { "displayName": "Título técnico", "purpose": "Nombra proyectos, cargos, hitos y formación." },
+      "body": { "displayName": "Lectura", "purpose": "Explica alcance, contribuciones y evolución." },
+      "label": { "displayName": "Metadato", "purpose": "Categorías, fechas, estados y pies de figura." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "state-color", "value": "0.2s", "purpose": "Cambio breve de color o fondo en enlaces y filtros." },
+      { "name": "directional-transform", "value": "0.25s", "purpose": "Desplazamiento de flechas y rotación de disclosures." },
+      { "name": "reduced-motion", "value": "none", "purpose": "Elimina transiciones y animaciones cuando el sistema solicita menos movimiento." }
+    ],
+    "breakpoints": [
+      { "name": "wide", "value": "1500px" },
+      { "name": "compact-desktop", "value": "950px" },
+      { "name": "mobile", "value": "640px" },
+      { "name": "small-mobile", "value": "380px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "Selecciona una categoría del catálogo sin dominar la composición.",
+      "html": "<button class=\"ds-filter-chip\" type=\"button\" aria-pressed=\"false\">Belray</button>",
+      "css": ".ds-filter-chip { border: 1px solid transparent; background: transparent; color: var(--ink, #173b33); padding: 9px 17px; border-radius: 30px; font: 400 16px/1.55 Source, sans-serif; cursor: pointer; transition: background 0.2s; } .ds-filter-chip:hover { background: #c9dfca; } .ds-filter-chip:focus-visible { outline: 3px solid #327be0; outline-offset: 5px; } .ds-filter-chip[aria-pressed=\"true\"] { background: var(--forest, #173e35); color: #fff; }"
+    },
+    {
+      "name": "Project Disclosure",
+      "kind": "custom",
+      "refersTo": "disclosure-summary",
+      "description": "Abre evidencia y evolución de un proyecto con un control HTML nativo.",
+      "html": "<details class=\"ds-project-disclosure\"><summary>Explorar el proyecto <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></summary><div><strong>Trabajo realizado</strong><p>Detalle técnico verificable del proyecto.</p></div></details>",
+      "css": ".ds-project-disclosure { color: var(--ink, #173b33); border-top: 1px solid var(--line, #a9beb0); border-bottom: 1px solid var(--line, #a9beb0); font: 400 16px/1.55 Source, sans-serif; } .ds-project-disclosure summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 15px 0; cursor: pointer; font-weight: 600; } .ds-project-disclosure summary::-webkit-details-marker { display: none; } .ds-project-disclosure summary:hover { color: #276447; } .ds-project-disclosure summary:focus-visible { outline: 3px solid #327be0; outline-offset: 5px; } .ds-project-disclosure svg { width: 24px; height: 24px; stroke: currentColor; stroke-width: 1.5; transition: transform 0.25s; } .ds-project-disclosure[open] > summary svg { transform: rotate(90deg); } .ds-project-disclosure div { padding: 8px 0 25px; }"
+    },
+    {
+      "name": "Hero Directory Link",
+      "kind": "nav",
+      "description": "Presenta un proyecto destacado como una entrada de directorio editorial.",
+      "html": "<a class=\"ds-directory-link\" href=\"#project\"><span><small>Aplicación comercial</small>Ventec APP</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-directory-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid #63816e; color: var(--paper, #f7f8f4); text-decoration: none; padding: 17px 0; font: 600 32px/1.1 Barlow, sans-serif; transition: color 0.2s; } .ds-directory-link small { display: block; color: #d2e4d5; margin-bottom: 5px; font: 400 14px/1.5 Source, sans-serif; } .ds-directory-link svg { width: 30px; height: 30px; stroke: currentColor; stroke-width: 1.5; } .ds-directory-link:hover { color: var(--lime, #d5f18c); } .ds-directory-link:focus-visible { outline: 3px solid #327be0; outline-offset: 5px; }"
+    },
+    {
+      "name": "Ventec System Plate",
+      "kind": "card",
+      "refersTo": "project-figure",
+      "description": "Representa la arquitectura de un proyecto mediante nodos y conectores tipográficos.",
+      "html": "<figure class=\"ds-system-plate\"><div><span class=\"ds-system-source\">ERP / BigQuery</span><i></i><strong>VENTEC<small>Una base comercial compartida</small></strong><i></i><p><span>Ventas</span><span>Agenda</span><span>Terreno</span></p></div><figcaption>Arquitectura del proyecto</figcaption></figure>",
+      "css": ".ds-system-plate { height: 265px; margin: 0; position: relative; overflow: hidden; padding: 30px; display: flex; align-items: center; justify-content: center; background: #c0d8ba; color: var(--ink, #173b33); font: 400 15px/1.5 Source, sans-serif; } .ds-system-plate > div { width: 88%; text-align: center; } .ds-system-source { display: inline-block; border: 1px solid #688b67; padding: 5px 22px; } .ds-system-plate i { display: block; height: 17px; width: 1px; background: #456544; margin: auto; } .ds-system-plate strong { display: block; background: var(--forest, #173e35); color: var(--paper, #f7f8f4); padding: 11px; font: 600 37px/1 Barlow, sans-serif; } .ds-system-plate strong small { display: block; margin-top: 5px; font: 400 13px/1.2 Source, sans-serif; } .ds-system-plate p { display: flex; justify-content: space-around; gap: 8px; margin: 0; } .ds-system-plate p span { border-top: 1px solid #648260; padding: 5px 14px; font-size: 14px; } .ds-system-plate figcaption { position: absolute; left: 20px; bottom: 10px; font-size: 11px; opacity: 0.85; }"
+    },
+    {
+      "name": "Technical Timeline Row",
+      "kind": "custom",
+      "description": "Relaciona una fecha lateral con un hito y su explicación mediante una regla superior.",
+      "html": "<article class=\"ds-timeline-row\"><time>Septiembre 2026</time><div><h3>Seguimiento y confiabilidad de datos</h3><p>Integración, controles de sincronización y respaldos.</p></div></article>",
+      "css": ".ds-timeline-row { display: grid; grid-template-columns: 230px 1fr; gap: 40px; border-top: 1px solid #678474; padding: 25px 0; background: var(--forest, #173e35); color: var(--paper, #f7f8f4); font-family: Source, sans-serif; } .ds-timeline-row time { color: #d2e4d5; font-size: 15px; } .ds-timeline-row h3 { margin: 0 0 10px; font: 600 29px/1.15 Barlow, sans-serif; } .ds-timeline-row p { margin: 0; color: #d2e4d5; font-size: 17px; line-height: 1.55; } @media (max-width: 640px) { .ds-timeline-row { grid-template-columns: 1fr; gap: 13px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Catálogo Técnico Vivo",
+    "overview": "El portafolio se comporta como una exposición técnica editorial: el trabajo aparece primero y la interfaz se retira para dejar que proyectos, diagramas y evolución profesional sostengan el relato. La atmósfera es sobria, industrial y humana. El verde bosque aporta autoridad; el campo menta mantiene la lectura abierta; la lima funciona como señal de actividad y dirección.\n\nLa composición convierte cada proyecto en una pieza catalogada, con metadatos, una lámina diagramática y detalle verificable. La tipografía condensada da a nombres y títulos la presencia de rótulos de exhibición, mientras Source Sans conserva una lectura franca y extensa. La experiencia evita ornamento superficial: estructura, contraste, líneas y cambios tonales hacen todo el trabajo visual.",
+    "keyCharacteristics": [
+      "Catálogo de proyectos antes que escaparate promocional.",
+      "Diagramas abstractos y tipográficos en lugar de capturas de producto genéricas.",
+      "Grandes rótulos condensados junto a columnas de lectura abiertas.",
+      "Superficies planas separadas por color, líneas finas y ritmo vertical.",
+      "Interacción discreta mediante filtros, enlaces direccionales y detalles nativos.",
+      "Adaptación móvil que conserva la jerarquía y recompone las láminas técnicas."
+    ],
+    "rules": [
+      { "name": "The Signal Lime Rule", "body": "Reserve la lima para énfasis funcional, identidad y llamadas; no la convierta en un relleno decorativo general.", "section": "colors" },
+      { "name": "The Local Plate Rule", "body": "Una lámina de proyecto puede usar un fondo contextual propio, pero la lectura que la rodea vuelve siempre al bosque, menta, papel y tinta.", "section": "colors" },
+      { "name": "The Two-Voice Rule", "body": "Use Barlow solo para identidad, encabezados y rótulos; mantenga explicación, metadatos y controles en Source Sans.", "section": "typography" },
+      { "name": "The Compressed Authority Rule", "body": "Los grandes títulos ganan fuerza con peso 600, línea cerrada y poco espacio entre letras; no los diluya con pesos livianos ni líneas altas.", "section": "typography" },
+      { "name": "The Catalogue Rhythm Rule", "body": "Conserve los grandes campos de color y las separaciones verticales; no encierre cada bloque en una tarjeta independiente.", "section": "layout" },
+      { "name": "The Diagram First Rule", "body": "En los proyectos principales, la lámina técnica precede a metadatos, título y explicación. En móvil se apila sin perder esa secuencia.", "section": "layout" },
+      { "name": "The Flat Evidence Rule", "body": "No añada sombras a proyectos, filtros o secciones. La jerarquía debe surgir de la evidencia, la tipografía, el color y las líneas.", "section": "elevation" },
+      { "name": "The One Rounded Exception Rule", "body": "Reserve la píldora para filtros. No redondee láminas, contenedores ni disclosures.", "section": "shapes" },
+      { "name": "The Native Interaction Rule", "body": "Prefiera enlaces, botones y `details` nativos con estados visibles. La interacción debe aclarar el catálogo, no convertirse en el espectáculo.", "section": "components" }
+    ],
+    "dos": [
+      "Do deje que proyectos, diagramas y trayectorias ocupen el primer plano.",
+      "Do use campos de color completos y líneas finas para organizar la página sin tarjetas elevadas.",
+      "Do mantenga la pareja Barlow Condensed / Source Sans 3 y su división clara de funciones.",
+      "Do diseñe cada lámina de proyecto como un diagrama editorial específico de su sistema.",
+      "Do conserve foco visible, HTML nativo, reducción de movimiento y una alternativa de impresión legible.",
+      "Do compruebe las láminas técnicas a 320px, especialmente etiquetas largas y flujos horizontales."
+    ],
+    "donts": [
+      "Don't convierta el portafolio en una cuadrícula de capturas de pantalla o mockups de dispositivos.",
+      "Don't añada sombras, vidrio, gradientes o radios de tarjeta al lenguaje plano existente.",
+      "Don't use la lima como fondo general ni compita con su función de señal.",
+      "Don't reemplace los detalles verificables por frases promocionales vagas.",
+      "Don't comprima texto técnico hasta cortar etiquetas; recomponga el diagrama en el breakpoint adecuado."
+    ]
+  }
+}

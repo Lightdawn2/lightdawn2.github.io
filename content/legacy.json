@@ -1,0 +1,148 @@
+{
+  "projects": [
+    {
+      "id": "webcontable",
+      "category": "crexer",
+      "name": "WebContable — Plataforma Educativa Contable",
+      "description": "Aplicación web full stack para la enseñanza del ciclo contable completo. Sistema multi-rol con API REST, módulos contables reales y sistema de evaluación — construido desde cero sin frameworks.",
+      "type": "Full Stack · Web App · En producción",
+      "highlights": [
+        "API REST propia con 52 endpoints — Router, middleware de autenticación y roles construidos desde cero",
+        "Arquitectura MVC: 12 Controllers · 10 Models · 6 Services (43 archivos PHP)",
+        "Módulos: Plan de Cuentas, Libro Diario, Mayor, Balance de Comprobación",
+        "Estados Financieros automáticos: Balance General y Estado de Resultados",
+        "Sistema de cursos, actividades, entregas y calificación por profesor",
+        "Autenticación con tokens, sesiones y control de roles (admin / profesor / alumno)"
+      ],
+      "tech": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Apache",
+        "REST API",
+        "MVC",
+        "Git"
+      ],
+      "url": "http://contable.grupocrexer.cl"
+    },
+    {
+      "id": "crexer-web",
+      "category": "crexer",
+      "name": "Sitio Web Institucional — grupocrexer.cl",
+      "description": "Sitio web corporativo completo con panel de administración (CMS) propio para Instituto Crexer. Gestión dinámica de cursos, noticias, equipo, carrusel y clientes.",
+      "type": "Full Stack · CMS Institucional · En producción",
+      "highlights": [
+        "137 archivos (23 PHP · 22 JS · 12 CSS) con arquitectura modular propia",
+        "API REST con 8 endpoints para todas las entidades del sitio",
+        "Panel admin completo: CRUD de cursos, noticias, equipo, carrusel y logos clientes",
+        "Base de datos MySQL con 6 tablas y catálogo de 30+ cursos con precios y modalidades SENCE",
+        "Generación automática de thumbnails para noticias y protección CSRF",
+        "Formulario de contacto con captura de IP, user agent y tipo de cliente (empresa/particular)"
+      ],
+      "tech": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Apache",
+        "REST API",
+        "Git"
+      ],
+      "url": "http://grupocrexer.cl"
+    },
+    {
+      "id": "contabilidad",
+      "category": "crexer",
+      "name": "Sistema Integral de Contabilidad",
+      "description": "Aplicación de escritorio multiplataforma para gestión del ciclo contable completo. Arquitectura en capas con 26 archivos Python, distribuible como ejecutable standalone.",
+      "type": "Desktop App · Python · Standalone",
+      "highlights": [
+        "Arquitectura en capas MVC: database/ · models/ · views/ · utils/ (26 archivos Python)",
+        "Partida doble con validación automática Debe = Haber en cada comprobante",
+        "Módulos: Plan Cuentas, Comprobantes, Libros Compras/Ventas, Balance, EEFF",
+        "Exportación a Excel con 7 hojas: Plan de Cuentas, Libro Diario, Balance, EEFF",
+        "UI con Tkinter + tkcalendar, procesamiento en segundo plano con threading",
+        "Empaquetado con PyInstaller para distribución sin instalar Python"
+      ],
+      "tech": [
+        "Python",
+        "Tkinter",
+        "SQLite",
+        "OpenPyXL",
+        "tkcalendar",
+        "PyInstaller",
+        "Git"
+      ],
+      "url": null
+    },
+    {
+      "id": "inventario-ti",
+      "category": "layher",
+      "name": "App de Control de Inventario TI",
+      "description": "Aplicación interna para Layher del Pacífico para control y trazabilidad de activos tecnológicos empresariales.",
+      "type": "Power Platform · Práctica Profesional",
+      "highlights": [
+        "Desarrollo en PowerApps con base de datos Dataverse",
+        "Mantención de aplicación web PHP vía FTP",
+        "Charlas internas de ciberseguridad básica al equipo"
+      ],
+      "tech": ["PowerApps", "Dataverse", "PHP", "Power Platform"],
+      "url": null
+    }
+  ],
+  "certifications": [
+    {
+      "year": "2025",
+      "name": "Microsoft Power Platform",
+      "issuer": "Microsoft — Webinar"
+    },
+    {
+      "year": "2024",
+      "name": "Desarrollo Web",
+      "issuer": "Certificado Oficial"
+    },
+    {
+      "year": "2024",
+      "name": "Adobe Premiere Pro",
+      "issuer": "Udemy"
+    },
+    {
+      "year": "2023",
+      "name": "Hacking Ético",
+      "issuer": "Certificado Oficial"
+    },
+    {
+      "year": "2023",
+      "name": "JavaScript",
+      "issuer": "Udemy"
+    },
+    {
+      "year": "2023",
+      "name": "Java",
+      "issuer": "Udemy"
+    },
+    {
+      "year": "2023",
+      "name": "PHP",
+      "issuer": "Udemy"
+    },
+    {
+      "year": "2023",
+      "name": "CSS Avanzado",
+      "issuer": "Udemy"
+    },
+    {
+      "year": "2023",
+      "name": "HTML5",
+      "issuer": "Udemy"
+    },
+    {
+      "year": "—",
+      "name": "Python",
+      "issuer": "Udemy"
+    }
+  ]
+}

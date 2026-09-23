@@ -1,0 +1,101 @@
+{
+  "experience": [
+    {
+      "date": "Actualidad",
+      "role": "Técnico en Confiabilidad — Desarrollador",
+      "company": "Belray Chile",
+      "items": [
+        "Desarrollo y evolución de Ventec APP: aplicación móvil, API, panel de administración, integración ERP y herramientas para el trabajo comercial en terreno.",
+        "Desarrollo de CKT / CONNEKT para monitoreo de condición de aceite, consulta de telemetría e históricos de equipos industriales.",
+        "Reconstrucción de los sitios Bel-Ray y Ventec; organización del ecosistema web en un monorepo con versionado independiente.",
+        "Desarrollo previo del CRM y de Proyecto AB, conservando su evolución hacia la plataforma comercial actual.",
+        "Integración de servicios, validación de datos, preparación de despliegues y documentación de versiones, incidencias y decisiones técnicas."
+      ]
+    },
+    {
+      "date": "Mayo — abril · Finalizado",
+      "role": "Encargado de Soporte TI & Webmaster",
+      "company": "Instituto de Capacitación Avanzada Crexer · Concepción",
+      "items": [
+        "Soporte técnico a usuarios internos: hardware, software y sistemas Windows.",
+        "Administración de Moodle y sitios corporativos WordPress.",
+        "Desarrollo y mantención de sistemas institucionales: plataforma educativa contable y sitio corporativo con CMS propio.",
+        "Gestión de cuentas, licencias y herramientas Office 365.",
+        "Mantención preventiva, inventario TI y coordinación con proveedores y áreas internas."
+      ]
+    },
+    {
+      "date": "Dic 2024 — feb 2025",
+      "role": "Práctica Profesional — Departamento de Sistemas",
+      "company": "Layher del Pacífico S.A. · Santiago",
+      "items": [
+        "Desarrollo de aplicación Power Apps para control de inventario tecnológico con Dataverse.",
+        "Soporte a usuarios y mantención preventiva y correctiva de equipos.",
+        "Mantención de aplicación PHP vía FTP y actualización de base de datos.",
+        "Gestión con call centers para impresoras industriales HP y Ricoh; charlas internas de ciberseguridad básica."
+      ]
+    },
+    {
+      "date": "2026 · En desarrollo",
+      "role": "Desarrollo web independiente",
+      "company": "Agua Dúctil",
+      "items": [
+        "Diseño y desarrollo de sitio corporativo, catálogo y consulta comercial, con trazabilidad de contenidos, validaciones y una maqueta de revisión."
+      ]
+    },
+    {
+      "date": "2025",
+      "role": "Marketing Digital",
+      "company": "Empresas particulares · Freelance",
+      "items": [
+        "Gestión de presencia digital y creación de contenido para clientes independientes."
+      ]
+    }
+  ],
+  "skills": [
+    [
+      "Desarrollo móvil",
+      "React Native · Expo · Expo Router · TypeScript",
+      "Flutter / Dart en el MVP inicial de Ventec."
+    ],
+    [
+      "Web y experiencia digital",
+      "Astro · React · Preact · HTML · CSS · JavaScript",
+      "WordPress, Moodle y desarrollo de CMS propio."
+    ],
+    [
+      "Backend y datos",
+      "Node.js · Fastify · Python · Django · PHP",
+      "PostgreSQL · PostGIS · MySQL · SQLite · BigQuery."
+    ],
+    [
+      "Integración y confiabilidad",
+      "API REST · Ubidots · ERP · Ingesta CSV",
+      "Telemetría, validación de datos y trazabilidad comercial."
+    ],
+    [
+      "Entrega y herramientas",
+      "Git · GitHub · Docker · pnpm · Playwright",
+      "Cloudflare Pages · nginx · Apache · VS Code · Android Studio · NetBeans."
+    ],
+    [
+      "Plataformas y soporte",
+      "Power Apps · Power Automate · Power BI · Dataverse",
+      "Office 365 · Linux Red Hat · Windows Server · Soporte HW/SW."
+    ]
+  ],
+  "education": [
+    {
+      "date": "2025 — actualidad",
+      "name": "Ingeniería de Ejecución en Gestión Industrial",
+      "institution": "Universidad Técnica Federico Santa María",
+      "status": "Cursando"
+    },
+    {
+      "date": "2023 — 2025",
+      "name": "Técnico Universitario en Informática",
+      "institution": "Universidad Técnica Federico Santa María",
+      "status": "Titulado"
+    }
+  ]
+}
