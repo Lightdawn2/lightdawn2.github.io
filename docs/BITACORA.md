@@ -1,5 +1,14 @@
 # Bitácora del portafolio
 
+## 2026-10-15 — Perfil profesional, resultados y habilidades
+
+- Ampliado el perfil profesional con cuatro capacidades de trabajo: producto de punta a punta, calidad de datos, software para terreno y entrega verificable.
+- Reescrita la experiencia en Belray para explicar responsabilidades en desarrollo móvil, backend, datos, web, despliegue y documentación.
+- Agregados rol, resultados y evidencia de alcance a Ventec APP, CKT / CONNEKT, ecosistema web Belray y CRM / Proyecto AB.
+- Registrados los avances recientes de Ventec y CONNEKT sin presentar prototipos locales ni demostraciones como producción.
+- Reorganizadas las habilidades por capacidad profesional, con herramientas y ejemplos concretos de aplicación.
+- Actualizadas las revisiones de repositorios consultadas y la fecha pública del contenido.
+
 ## 2026-09-23 — Cronología laboral confirmada
 
 - Confirmado el período en Instituto Crexer: abril de 2025 a abril de 2026.

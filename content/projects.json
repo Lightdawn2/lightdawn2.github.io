@@ -1,23 +1,36 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-10-15",
   "projects": [
     {
       "id": "ventec",
       "name": "Ventec APP",
       "category": "belray",
       "type": "Aplicación comercial · Belray Chile",
-      "status": "Marcha blanca",
+      "status": "Marcha blanca · evolución activa",
       "year": "2026",
       "visual": "sales",
-      "description": "Plataforma comercial para conectar ventas, cartera de clientes y trabajo en terreno. Evolucionó desde un MVP en Flutter a una aplicación React Native / Expo, con API propia, base PostgreSQL y panel de administración web.",
+      "description": "Plataforma comercial y operativa que conecta ventas, cartera de clientes y trabajo en terreno. Evolucionó desde un MVP en Flutter a un producto React Native / Expo con API propia, PostgreSQL y panel web.",
+      "role": "Desarrollo full stack y evolución de producto: levantamiento de requerimientos, arquitectura, aplicación móvil, API, datos, panel web, pruebas y preparación de entregas.",
       "highlights": [
-        "Dashboard de ventas con filtros, rankings y exportación; ingesta CSV con validación, deduplicación y registro de cargas.",
-        "Integración de ventas del ERP mediante BigQuery y sincronización hacia PostgreSQL, con controles de integridad y antigüedad de los datos.",
-        "Agenda comercial, contactos, visitas y seguimientos, con acceso por vendedor y perfiles administrativos.",
-        "Simulador de reducción de costos con fórmulas versionadas y administración de usuarios y parámetros.",
-        "Verificación de ubicación de visitas, revisión de actividad y reportes de problemas con seguimiento en Notion.",
-        "Integración de flota Strix, recorridos y cruce con gestiones comerciales implementados en desarrollo; despliegue pendiente según el registro del 9 de septiembre.",
-        "Preparación de APK Android, despliegue de API y panel, respaldo de datos y documentación para marcha blanca."
+        "Construcción del dashboard comercial, ranking de productos, Cliente 360, agenda, contactos, visitas, cartera y simulador de reducción de costos.",
+        "Integración del ERP mediante BigQuery y sincronización controlada hacia PostgreSQL, con auditoría de cargas, deduplicación y alertas de antigüedad.",
+        "Diseño de permisos para vendedores, administradores y superadministración, conservando la historia cuando un usuario cambia de estado.",
+        "Integración de la flota Strix: asociación patente–vendedor, recorridos diarios y cruce de gestiones con ubicaciones registradas.",
+        "Implementación de geolocalización de visitas y cola de revisión, con decisiones humanas para aceptar o retirar registros.",
+        "Prototipado del módulo de prevención de riesgos: formularios oficiales, agenda, revisión, medidas correctivas, documentos PDF y futura operación sin señal.",
+        "Preparación de APK Android, despliegues de API y panel, migraciones, respaldos y documentación de cada entrega."
+      ],
+      "results": [
+        "Detecté y corregí una comparación que mostraba crecimiento donde existía una caída; los períodos quedaron alineados al último mes cerrado y protegidos con pruebas de regresión.",
+        "Separé la lectura de BigQuery de la escritura productiva para que el servidor no almacenara credenciales de Google y cada carga quedara trazable.",
+        "Incorporé medición del estado de despliegue, alertas de datos atrasados y avisos de respaldo para que los fallos operativos dejaran de pasar inadvertidos.",
+        "La línea de prevención llegó a una maqueta navegable basada en cinco registros oficiales; su paso a producto se planificó en 21 bloques con seguridad y trabajo sin conexión desde el diseño.",
+        "Como exploración adicional, desarrollé una experiencia web con Phaser y controles táctiles alrededor del personaje Gotibel; permanece en evaluación local y no se presenta como publicada."
+      ],
+      "proof": [
+        "App móvil + API + panel web + base de datos",
+        "43 migraciones registradas en la entrega verificada del 29-09",
+        "112 comprobaciones de lógica y 39 de documentos en la maqueta de prevención"
       ],
       "tech": [
         "React Native",
@@ -30,7 +43,7 @@
         "React",
         "Docker"
       ],
-      "history": "MVP Flutter → migración a Expo → integración ERP y agenda → marcha blanca → gestión de flota en desarrollo.",
+      "history": "MVP Flutter → migración a Expo → integración ERP y agenda → marcha blanca → auditoría de datos y flota → prevención de riesgos en evolución.",
       "source": "ventec-mobile-app: README.md, docs/ESTADO.md, docs/bigquery-erp-integration.md e historial Git."
     },
     {
@@ -38,17 +51,29 @@
       "name": "CKT APP / CONNEKT",
       "category": "belray",
       "type": "Monitoreo industrial · Belray Chile",
-      "status": "En desarrollo",
+      "status": "Demo funcional · hardening pendiente",
       "year": "2026",
       "visual": "telemetry",
-      "description": "Aplicación móvil de monitoreo de condición de aceite en equipos industriales. Organiza plantas y equipos, consulta telemetría e históricos y presenta variables de condición en una interfaz pensada para confiabilidad.",
+      "description": "Aplicación móvil de monitoreo de condición de aceite. Organiza plantas y equipos, combina telemetría reciente con históricos y presenta variables técnicas en una interfaz pensada para confiabilidad industrial.",
+      "role": "Desarrollo móvil e integración de telemetría: arquitectura de datos, proxy seguro, normalización de respuestas, experiencia de consulta y endurecimiento técnico.",
       "highlights": [
-        "Navegación por plantas y equipos, dashboard por equipo e histórico tabulado con selección de variable.",
-        "Visualización de AW, partículas de 4 / 6 / 14 µm, clasificación NAS y condición OD.",
-        "Integración de históricos mediante un proxy backend y lecturas recientes desde Ubidots para complementar los datos disponibles.",
-        "Normalización de respuestas, caché y reintentos con TanStack Query; estados de carga, error, ausencia de datos y lecturas atrasadas.",
-        "Filtros temporales, paginación de históricos y tratamiento de la hora local de Chile.",
-        "Perfiles y permisos de demostración por planta y equipo. Autenticación productiva y validación técnica de umbrales aún pendientes."
+        "Navegación por plantas y equipos, dashboard técnico por activo e histórico tabulado con selección de variable.",
+        "Visualización de actividad de agua, partículas de 4 / 6 / 14 µm, clasificación NAS y condición OD.",
+        "Proxy que combina históricos del servicio operacional con la cola reciente de Ubidots, manteniendo las credenciales fuera del cliente móvil.",
+        "Normalización, caché y reintentos con TanStack Query, junto con estados de carga, error, ausencia de datos y lecturas atrasadas.",
+        "Filtros temporales, paginación correcta y tratamiento explícito de la zona horaria de Chile.",
+        "Preparación de autenticación JWT, alcance por planta y equipo, CORS restringible y almacenamiento seguro de sesión."
+      ],
+      "results": [
+        "La aplicación puede mostrar el histórico disponible y completar su extremo reciente con lecturas de Ubidots, reduciendo el desfase del proceso por lotes.",
+        "Corregí la consulta de series de 30 días cuando el límite del servicio devolvía sólo una fracción de los registros esperados.",
+        "El alcance JWT dejó de asumir acceso global: sin permisos explícitos, la sesión parte sin plantas ni equipos autorizados.",
+        "Los controles prioritarios incorporaron rol, etiqueta, estado accesible y objetivos táctiles de 48 dp."
+      ],
+      "proof": [
+        "2 fuentes de datos combinadas: histórico operacional + Ubidots",
+        "26 pruebas automatizadas con TypeScript, lint y formato en verde",
+        "Cliente Expo separado de credenciales y secretos del proxy"
       ],
       "tech": [
         "React Native",
@@ -60,7 +85,7 @@
         "Ubidots",
         "API REST"
       ],
-      "history": "Base móvil → integración de telemetría → ajustes de históricos y zona horaria → complemento de lecturas recientes.",
+      "history": "Base móvil → integración de telemetría → auditoría de seguridad y accesibilidad → ajustes de históricos y zona horaria → lecturas recientes desde Ubidots.",
       "source": "connekt-mobile: README.md, src/services/telemetry e historial Git."
     },
     {
@@ -71,7 +96,8 @@
       "status": "Implementado · en revisión",
       "year": "2026",
       "visual": "web",
-      "description": "Reconstrucción de los sitios Bel-Ray y Ventec con arquitectura estática, contenidos trazables y componentes compartidos. Los desarrollos se reunieron en un monorepo para mantener cada marca y su versionado de forma independiente.",
+      "description": "Reconstrucción de los sitios Bel-Ray y Ventec con arquitectura estática, contenido trazable y componentes reutilizables. Los desarrollos se reunieron en un monorepo preparado para mantener cuatro marcas con versionado independiente.",
+      "role": "Arquitectura frontend, investigación y migración de contenido, diseño de componentes, rendimiento, accesibilidad y estrategia de mantenimiento.",
       "highlights": [
         "Bel-Ray: reconstrucción de páginas corporativas, servicios, sucursales, contacto y catálogo industrial.",
         "Importación de 42 productos desde WooCommerce, conservando categorías, atributos, fotografías y enlaces a documentación técnica.",
@@ -79,6 +105,18 @@
         "Calculadora interactiva con islas Preact y salida HTML estática para reducir dependencias de ejecución en el servidor.",
         "Monorepo pnpm con capa compartida y etiquetas de versión por sitio.",
         "Connekt y RPurple incluidos en el alcance del repositorio, con sus nuevas implementaciones aún pendientes. El rediseño no se presenta como publicado en los dominios actuales."
+      ],
+      "results": [
+        "Bel-Ray quedó reconstruido con sus rutas corporativas y un catálogo de 42 productos importados desde la fuente administrativa.",
+        "Ventec reorganizó 46 páginas de origen en 26 rutas sin perder la navegación: las páginas repetitivas pasaron a plantillas y las fichas con valor de búsqueda conservaron URL propia.",
+        "El JavaScript de la portada de Ventec bajó de 63,5 KB a 15,8 KB gzip al usar Preact/compat para la única isla interactiva.",
+        "Las fuentes de Ventec bajaron de 332 KB en 32 archivos a 124 KB en 6 archivos autoalojados, eliminando además conexiones a Google Fonts.",
+        "El catálogo y los medios conservan procedencia documentada; cuando faltó una fuente verificable se dejó el contenido pendiente en vez de inventarlo."
+      ],
+      "proof": [
+        "Bel-Ray: 14 rutas corporativas y 42 productos",
+        "Ventec: 46 páginas de origen reorganizadas en 26 rutas",
+        "Monorepo pnpm para Bel-Ray, Ventec, Connekt y RPurple"
       ],
       "tech": [
         "Astro",
@@ -129,13 +167,24 @@
       "status": "Antecedente de Ventec APP",
       "year": "2026",
       "visual": "archive",
-      "description": "Desarrollo de un CRM modular para seguimiento comercial, visitas, postventa y prevención de riesgos. Su trabajo forma parte de la evolución hacia la plataforma comercial actual y se conserva como antecedente técnico.",
+      "description": "CRM modular para seguimiento comercial, visitas, postventa y prevención de riesgos. Fue la primera formalización del dominio y se conserva como antecedente técnico de la plataforma comercial actual.",
+      "role": "Diseño del dominio, backend Django, API, permisos, modelo geográfico y paneles operativos; posterior evaluación de su convergencia con una aplicación móvil.",
       "highlights": [
         "Monolito Django con API Django REST Framework y PostgreSQL / PostGIS.",
         "Gestión de zonas, vendedores, clientes, contactos, asignaciones, visitas, estados y comentarios.",
         "Acceso por rol y zona, dashboard de productividad y calendario de visitas.",
         "Reportes preventivos con hallazgos, evidencias y revisión de jefaturas.",
         "Proyecto AB exploró la convergencia con una app Expo, importaciones, ventas e informes PDF. Fue archivado el 8 de septiembre de 2026; la línea activa continuó en Ventec APP."
+      ],
+      "results": [
+        "El CRM estableció entidades y reglas para zonas, vendedores, clientes, contactos, asignaciones, visitas y reportes preventivos.",
+        "La experiencia permitió identificar qué debía reutilizarse y qué debía reemplazarse al consolidar el trabajo comercial en Ventec APP.",
+        "Proyecto AB se archivó explícitamente cuando la convergencia dejó de ser la mejor ruta, preservando el aprendizaje y evitando mantener dos fuentes de verdad."
+      ],
+      "proof": [
+        "Arquitectura Django modular con API DRF",
+        "PostgreSQL / PostGIS para datos comerciales y geográficos",
+        "Roles por zona y flujos de seguimiento y prevención"
       ],
       "tech": [
         "Python",
@@ -181,6 +230,18 @@
       "title": "Agua Dúctil suma nuevas herramientas",
       "text": "Lista técnica de cotización, identidad visual oficial, modo oscuro persistente y panel de descargas.",
       "project": "aguaductil"
+    },
+    {
+      "date": "29 septiembre 2026",
+      "title": "Ventec consolida su entrega técnica",
+      "text": "Se verifica una entrega con 43 migraciones, controles de despliegue, respaldo y calidad de datos; prevención queda planificada como la siguiente línea de evolución.",
+      "project": "ventec"
+    },
+    {
+      "date": "Octubre 2026",
+      "title": "CONNEKT completa el extremo reciente",
+      "text": "El proxy combina históricos operacionales con telemetría reciente de Ubidots e incorpora correcciones de paginación, hora de Chile, alcance JWT y accesibilidad.",
+      "project": "connekt"
     }
   ]
 }

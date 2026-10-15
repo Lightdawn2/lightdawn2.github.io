@@ -79,7 +79,7 @@ components:
 
 El portafolio se comporta como una exposición técnica editorial: el trabajo aparece primero y la interfaz se retira para dejar que proyectos, diagramas y evolución profesional sostengan el relato. La atmósfera es sobria, industrial y humana. El verde bosque aporta autoridad; el campo menta mantiene la lectura abierta; la lima funciona como señal de actividad y dirección.
 
-La composición convierte cada proyecto en una pieza catalogada, con metadatos, una lámina diagramática y detalle verificable. La tipografía condensada da a nombres y títulos la presencia de rótulos de exhibición, mientras Source Sans conserva una lectura franca y extensa. La experiencia evita ornamento superficial: estructura, contraste, líneas y cambios tonales hacen todo el trabajo visual.
+La composición convierte cada proyecto en una pieza catalogada, con metadatos, una lámina diagramática, rol personal, resultados y evidencia verificable. Antes del catálogo, un perfil de cuatro pilares explica cómo se aborda el trabajo. La tipografía condensada da a nombres y títulos la presencia de rótulos de exhibición, mientras Source Sans conserva una lectura franca y extensa. La experiencia evita ornamento superficial: estructura, contraste, líneas y cambios tonales hacen todo el trabajo visual.
 
 **Key Characteristics:**
 
@@ -138,9 +138,9 @@ La paleta mezcla verdes de operación y archivo con una señal lima precisa; los
 
 La página usa un margen lateral fluido que crece desde 24px hasta 88px. Sobre 1500px, el contenido se centra dentro de una anchura efectiva de 1380px. Las secciones respiran con 84px verticales en escritorio y 56px en móvil.
 
-La portada y el contacto forman composiciones de dos columnas. La portada reparte nombre y contexto a la izquierda y un directorio de proyectos a la derecha, con una separación fluida de 45px a 150px. El catálogo usa dos columnas iguales con 30px entre columnas y 46px entre filas. Experiencia y bitácora comparten una columna lateral de fechas de 230px; habilidades usan tres columnas; formación y cursos usan dos.
+La portada y el contacto forman composiciones de dos columnas. La portada reparte nombre y contexto a la izquierda y un directorio de proyectos a la derecha, con una separación fluida de 45px a 150px. El perfil profesional distribuye cuatro pilares en una línea abierta. El catálogo usa dos columnas iguales con 30px entre columnas y 46px entre filas. Experiencia y bitácora comparten una columna lateral de fechas de 230px; habilidades usan dos columnas para sostener descripciones y evidencia; formación y cursos usan dos.
 
-A 950px se reduce la densidad sin cambiar la arquitectura principal: la columna temporal baja a 175px y habilidades pasa de tres a dos columnas. A 640px, portada, proyectos, cronología, formación, cursos y contacto pasan a una sola columna; la navegación se envuelve, el margen lateral queda en 24px y los filtros permiten varias filas. A 380px, la lámina CONNEKT aumenta su altura, reduce tipografía y recompone sus variables en tres columnas flexibles para que sus etiquetas no se recorten.
+A 950px se reduce la densidad sin cambiar la arquitectura principal: la columna temporal baja a 175px y el perfil pasa de cuatro a dos columnas. A 640px, portada, perfil, proyectos, habilidades, cronología, formación, cursos y contacto pasan a una sola columna; la navegación se envuelve, el margen lateral queda en 24px y los filtros permiten varias filas. A 380px, la lámina CONNEKT aumenta su altura, reduce tipografía y recompone sus variables en tres columnas flexibles para que sus etiquetas no se recorten.
 
 **The Catalogue Rhythm Rule.** Conserve los grandes campos de color y las separaciones verticales; no encierre cada bloque en una tarjeta independiente.
 
@@ -186,6 +186,10 @@ El detalle usa el elemento nativo `details` para mantener una interacción acces
 - **State:** La flecha gira 90° al abrir; el texto se vuelve verde medio al pasar el cursor.
 - **Focus:** Anillo azul de 3px con 5px de separación.
 - **Behavior:** Un enlace por hash revela cualquier proyecto filtrado, abre su disclosure y lo desplaza al inicio.
+
+### Professional Profile and Skills
+
+El perfil profesional usa cuatro columnas abiertas separadas por líneas superiores. Las habilidades siguen el mismo lenguaje, pero en dos columnas más amplias para relacionar capacidad, evidencia y herramientas sin convertir la sección en una nube de palabras clave. En móvil ambos conjuntos se apilan.
 
 ### Navigation
 

@@ -1,15 +1,38 @@
 {
+  "professionalProfile": {
+    "statement": "Desarrollo productos digitales para operaciones reales: traduzco necesidades comerciales, de confiabilidad y prevención en aplicaciones móviles, servicios de datos y paneles web que pueden probarse, desplegarse y mantenerse.",
+    "pillars": [
+      {
+        "name": "Producto de punta a punta",
+        "text": "Participo desde el levantamiento y la definición del flujo hasta la arquitectura, implementación, pruebas, despliegue y documentación."
+      },
+      {
+        "name": "Datos que sostienen decisiones",
+        "text": "Integro ERP, telemetría y fuentes operacionales con validaciones, trazabilidad y controles para evitar que una cifra incorrecta llegue al usuario."
+      },
+      {
+        "name": "Software para terreno",
+        "text": "Diseño para móviles, conectividad irregular, permisos por rol y procesos que deben seguir funcionando fuera del escritorio."
+      },
+      {
+        "name": "Entrega verificable",
+        "text": "Mantengo pruebas, respaldos, estados de despliegue y documentación para distinguir con claridad lo desarrollado, lo publicado y lo pendiente."
+      }
+    ]
+  },
   "experience": [
     {
       "date": "Mayo 2026 — actualidad",
       "role": "Técnico en Confiabilidad — Desarrollador",
       "company": "Belray Chile",
       "items": [
-        "Desarrollo y evolución de Ventec APP: aplicación móvil, API, panel de administración, integración ERP y herramientas para el trabajo comercial en terreno.",
-        "Desarrollo de CKT / CONNEKT para monitoreo de condición de aceite, consulta de telemetría e históricos de equipos industriales.",
-        "Reconstrucción de los sitios Bel-Ray y Ventec; organización del ecosistema web en un monorepo con versionado independiente.",
-        "Desarrollo previo del CRM y de Proyecto AB, conservando su evolución hacia la plataforma comercial actual.",
-        "Integración de servicios, validación de datos, preparación de despliegues y documentación de versiones, incidencias y decisiones técnicas."
+        "Desarrollo full stack de Ventec APP: aplicación React Native / Expo, API Fastify, PostgreSQL, panel web e integración de ventas desde el ERP mediante BigQuery.",
+        "Levantamiento y traducción de necesidades comerciales, de confiabilidad y prevención en flujos móviles, modelos de datos, permisos y herramientas de seguimiento.",
+        "Desarrollo de CKT / CONNEKT para monitoreo de condición de aceite, combinando históricos operacionales con telemetría reciente de Ubidots mediante un proxy seguro.",
+        "Auditoría y corrección de calidad de datos comerciales, períodos comparables, asignaciones de cartera, geolocalización y estados de actividad.",
+        "Reconstrucción de los sitios Bel-Ray y Ventec en Astro; migración de contenido y catálogos, optimización de rendimiento y consolidación en un monorepo.",
+        "Preparación y verificación de despliegues, migraciones, respaldos, APK Android, monitoreo de servicios y documentación de decisiones e incidencias.",
+        "Prototipado de nuevos módulos y experiencias, incluyendo prevención de riesgos para trabajo en terreno y una experiencia interactiva con Phaser en evaluación local."
       ]
     },
     {
@@ -53,36 +76,48 @@
     }
   ],
   "skills": [
-    [
-      "Desarrollo móvil",
-      "React Native · Expo · Expo Router · TypeScript",
-      "Flutter / Dart en el MVP inicial de Ventec."
-    ],
-    [
-      "Web y experiencia digital",
-      "Astro · React · Preact · HTML · CSS · JavaScript",
-      "WordPress, Moodle y desarrollo de CMS propio."
-    ],
-    [
-      "Backend y datos",
-      "Node.js · Fastify · Python · Django · PHP",
-      "PostgreSQL · PostGIS · MySQL · SQLite · BigQuery."
-    ],
-    [
-      "Integración y confiabilidad",
-      "API REST · Ubidots · ERP · Ingesta CSV",
-      "Telemetría, validación de datos y trazabilidad comercial."
-    ],
-    [
-      "Entrega y herramientas",
-      "Git · GitHub · Docker · pnpm · Playwright",
-      "Cloudflare Pages · nginx · Apache · VS Code · Android Studio · NetBeans."
-    ],
-    [
-      "Plataformas y soporte",
-      "Power Apps · Power Automate · Power BI · Dataverse",
-      "Office 365 · Linux Red Hat · Windows Server · Soporte HW/SW."
-    ]
+    {
+      "name": "Desarrollo de producto full stack",
+      "summary": "Construcción coordinada de aplicaciones móviles, API, paneles administrativos y bases de datos.",
+      "evidence": "Aplicado en Ventec APP desde la interfaz de terreno hasta los procesos de ventas, permisos y administración.",
+      "tools": ["React Native", "Expo", "TypeScript", "React", "Node.js", "Fastify", "PostgreSQL"]
+    },
+    {
+      "name": "Integración y calidad de datos",
+      "summary": "Diseño de ingestas, conciliaciones, normalización y controles para datos comerciales y telemetría.",
+      "evidence": "Integraciones con BigQuery, ERP, CSV, Ubidots y APIs; deduplicación, períodos comparables y trazabilidad de cargas.",
+      "tools": ["BigQuery", "SQL", "PostgreSQL", "ETL", "API REST", "Ubidots", "CSV"]
+    },
+    {
+      "name": "Confiabilidad y operación industrial",
+      "summary": "Conversión de procesos de terreno en herramientas para monitoreo, seguimiento y toma de decisiones.",
+      "evidence": "Telemetría de condición de aceite, geolocalización de visitas, gestión de flota y flujos de prevención de riesgos.",
+      "tools": ["CONNEKT", "OpenStreetMap", "Strix", "PostGIS", "Telemetría", "ISO 45001"]
+    },
+    {
+      "name": "Seguridad y control de acceso",
+      "summary": "Separación de secretos, políticas por rol y diseño de permisos con denegación segura.",
+      "evidence": "Tokens fuera del cliente móvil, JWT con alcance explícito, almacenamiento seguro y fronteras de acceso por perfil.",
+      "tools": ["JWT", "SecureStore", "CORS", "RBAC", "Proxy / BFF", "Variables de entorno"]
+    },
+    {
+      "name": "Web, contenido y rendimiento",
+      "summary": "Arquitectura de sitios estáticos, migración editorial y componentes reutilizables con foco en velocidad y mantenimiento.",
+      "evidence": "Sitios Bel-Ray y Ventec en Astro, catálogos estructurados, Preact y fuentes autoalojadas con menor peso de descarga.",
+      "tools": ["Astro", "Preact", "HTML", "CSS", "WooCommerce", "SEO técnico", "Accesibilidad"]
+    },
+    {
+      "name": "Entrega, pruebas y operación",
+      "summary": "Validación del software más allá del build: pruebas, migraciones, respaldos y comprobación del artefacto servido.",
+      "evidence": "Suites unitarias, pruebas de navegador, health checks, medición de despliegue y documentación operativa por versión.",
+      "tools": ["Vitest", "Playwright", "Git", "GitHub", "Docker", "PM2", "nginx", "pnpm"]
+    },
+    {
+      "name": "Sistemas y soporte TI",
+      "summary": "Base operativa en soporte, plataformas corporativas y continuidad de servicios para usuarios internos.",
+      "evidence": "Experiencia con inventario tecnológico, Moodle, Office 365, Power Platform y administración de entornos Windows y Linux.",
+      "tools": ["Power Apps", "Power Automate", "Power BI", "Dataverse", "Office 365", "Linux", "Windows Server"]
+    }
   ],
   "education": [
     {

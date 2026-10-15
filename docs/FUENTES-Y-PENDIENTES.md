@@ -1,12 +1,12 @@
 # Fuentes y decisiones de contenido
 
-Revisión: 23 de septiembre de 2026. Este documento acompaña el contenido público sin copiar datos operacionales, credenciales, endpoints internos ni registros de clientes.
+Revisión: 15 de octubre de 2026. Este documento acompaña el contenido público sin copiar datos operacionales, credenciales, endpoints internos ni registros de clientes.
 
 | Ficha | Evidencia revisada | Criterio editorial |
 | --- | --- | --- |
-| Ventec APP | `ventec-mobile-app/README.md`, `docs/ESTADO.md`, `docs/bigquery-erp-integration.md`, documentación histórica e historial Git | El README todavía se presenta como demo, pero el registro fechado del 9 de septiembre documenta marcha blanca y despliegues. La flota se describe como desarrollo pendiente de despliegue. No se afirma que Cliente 360 esté operativo. |
-| CKT / CONNEKT | `connekt-mobile/README.md`, servicios de telemetría e historial Git | App en desarrollo; datos reales a través de proxy, pero catálogo y permisos demo. No se presenta la autenticación ni los umbrales como aptos para producción. |
-| Ecosistema web | `belray-webs/README.md` y README de ambos sitios implementados | Bel-Ray y Ventec reconstruidos. Connekt y RPurple por implementar. Los dominios existentes no se enlazan como si fueran las nuevas versiones. |
+| Ventec APP | `ventec-mobile-app/README.md`, `docs/ESTADO.md`, `docs/bigquery-erp-integration.md`, `docs/plan-prevencion.md`, documentación histórica e historial Git | La marcha blanca y la entrega del 29 de septiembre están documentadas. Prevención se describe como prototipo y plan de evolución. Gotibel se menciona como exploración local sin publicar. El árbol de trabajo revisado contenía cambios no confirmados en Git, por lo que no se confunden con una entrega. |
+| CKT / CONNEKT | `connekt-mobile/README.md`, `docs/ESTADO.md`, servicios de telemetría, pruebas e historial Git | La combinación de históricos con lecturas recientes de Ubidots y las correcciones de seguridad, paginación y hora local están implementadas. Se conserva el estado de demo funcional porque persisten tareas de endurecimiento antes de producción. |
+| Ecosistema web | `belray-webs/README.md`, README de ambos sitios implementados y registros de auditoría del repositorio | Bel-Ray y Ventec reconstruidos. Las cifras de rutas, productos y peso corresponden a la migración documentada. Connekt y RPurple siguen por implementar. Los dominios existentes no se enlazan como si fueran las nuevas versiones. |
 | Agua Dúctil | `aguaductil/README.md`, `package.json`, catálogo y commits del 15–16 de septiembre | Trabajo independiente en desarrollo. La maqueta tiene publicación de revisión; no equivale a lanzamiento comercial. No se afirma que el formulario envíe correo sin configurar un transporte. |
 | CRM y Proyecto AB | README locales y descripción de `proyecto-ab` en GitHub | Se conserva el antecedente del CRM. Proyecto AB archivado el 8 de septiembre; no se equipara archivo de AB con archivo del repositorio CRM. |
 | Proyectos anteriores, cursos y formación | `index.html` anterior a la remodelación; importado a `content/legacy.json` | Descripciones conservadas. No se revalidó la operación actual de los sitios Crexer ni se obtuvieron archivos originales de los certificados. |
